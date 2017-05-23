@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+		<!-- Own styles -->
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- Roboto font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Font awesome -->
+		<script src="https://use.fontawesome.com/4c8fb5b39e.js"></script>
+		
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-toggleable-md fixed-top">
+			<div class="container">
+				<button id="btn_col" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+				</button>
+
+				<a class="navbar-brand" href="#home">porticus</a>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#home">home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#advantages">owerview</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#features">features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#whyus">why us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#news">news</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#clients">our clients</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contacts">contacts</a>
+						</li>
+					</ul>
+				</div>
+
+				<a href="" class="btn_own hidden-md-down" data-toggle="modal" data-target="#modal_name_tel">download app</a>
+
+			</div>
+		</nav>
+
+		<!-- Modal (name + email) -->
+		<div class="modal fade" id="modal_name_email" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<form action="form_handler_name_email.php" method="POST">
+					<div class="form-group">
+					    <label for="name">Name</label>
+					    <input type="text" class="form-control" id="name" name="name187" aria-describedby="emailHelp" placeholder="Your name">
+					</div>
+					<div class="form-group">
+					    <label for="email">E-mail address</label>
+					    <input type="email" class="form-control" id="email" name="email841" aria-describedby="emailHelp" placeholder="Your e-mail">
+					</div>
+					<button type="submit" class="btn_own btn_own_subm">Submit</button>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Modal (name + tel) -->
+		<div class="modal fade" id="modal_name_tel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<form action="form_handler_name_tel.php" method="POST">
+					<div class="form-group">
+					    <label for="name">Name</label>
+					    <input type="text" class="form-control" id="name" name="name187" aria-describedby="emailHelp" placeholder="Your name">
+					</div>
+					<div class="form-group">
+					    <label for="tel">Telephone</label>
+					    <input class="form-control" type="tel" placeholder="В формате (095)..." id="tel" name="tel982">
+					</div>
+					<button type="submit" class="btn_own btn_own_subm">Submit</button>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+
+		<header id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg-6">
+						<h1>Great landing page for <br><span>your awesome app</span></h1>
+						<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers.</p>
+						<a href="#" class="btn_own btn_active btn_inline_block">ios version</a>
+						<a href="#" class="btn_own trans btn_inline_block">android version</a>
+					</div>
+					<div class="col-lg-6">
+						<img class="img-fluid hidden-md-down" src="img/macbook.png" alt="">
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="advantages" class="advantages">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="adventage_card">
+							<img class="img-fluid" src="img/icon-1.png" alt="">
+							<h3>Easy to Custom</h3>
+							<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet ocomputers.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="adventage_card">
+							<img class="img-fluid" src="img/icon-2.png" alt="">
+							<h3>Everytime & Everywhere</h3>
+							<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet ocomputers.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="adventage_card">
+							<img class="img-fluid" src="img/icon-3.png" alt="">
+							<h3>Ads on Target</h3>
+							<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet ocomputers.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="features" class="features">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 hidden-md-down">
+						<img src="img/ipad.png" alt="" class="img-fluid">
+						<div id="carouselExampleSlidesOnly2" class="carousel slide" data-ride="carousel">
+						  <div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+							  <img class="d-block img-fluid" src="img/app-1.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+							  <img class="d-block img-fluid" src="img/app-2.jpg" alt="Second slide">
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 offset-lg-1">
+						<h2>Special Features</h2>
+						<a href="#" class="btn_own trans">compatible</a>
+						<a href="#" class="btn_own btn_active">difference</a>
+						<a href="#" class="btn_own trans">display</a>
+						<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers. Most such devices are sold with several apps bundled as pre-installed software. Worked great on Chrome, Firefox, Opera...</p>
+						<ul>
+							<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Compatible on all platforms</li>
+							<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Saving time for everyone work in the system</li>
+							<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Cost savings HRM</li>
+							<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Easy access and manipulation</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="whyus" class="whyus">
+			<div class="container">
+				<h2>Why Choose Us?</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="whyus_card">
+							<div class="align-items-center">
+								<i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i>
+								<h3>Cloud Storage</h3>
+							</div>
+							<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="whyus_card">
+							<div class="align-items-center">
+								<i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i>
+								<h3>Cloud Storage</h3>
+							</div>
+							<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="whyus_card">
+							<div class="align-items-center">
+								<i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i>
+								<h3>Cloud Storage</h3>
+							</div>
+							<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="whyus_card">
+							<div class="align-items-center">
+								<i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i>
+								<h3>Cloud Storage</h3>
+							</div>
+							<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="whyus_card">
+							<div class="align-items-center">
+								<i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i>
+								<h3>Cloud Storage</h3>
+							</div>
+							<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="whyus_card">
+							<div class="align-items-center">
+								<i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i>
+								<h3>Cloud Storage</h3>
+							</div>
+							<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="every_screen" class="every_screen">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<h2>Displayed On Every Screen!</h2>
+						<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers. Most such devices are sold with several apps bundled as pre-installed software.</p>
+						<p>Apps that are not preinstalled are usually available through distribution
+						platforms called app stores. Developing apps for mobile devices requires considering the constraints and features of these devices.</p>
+						<p>Mobile devices run on battery and have less powerful processors than person computers and also have more features such as location detection.</p>
+					</div>
+					<div class="col-md-6">
+						<img id="whyus_img" src="img/ipad-iphone.png" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="sharing" class="sharing">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 hidden-sm-down">
+						<img src="img/img-network.png" alt="" class="img-fluid">
+					</div>
+					<div class="col-md-5 offset-md-1">
+						<h2>Sharing Work On Network</h2>
+						<p>A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers. Most such devices are sold with several apps bundled as pre-installed software.</p>
+						<ul>
+							<div class="align-items-center">
+								<li><i class="fa fa-lock fa-2x" aria-hidden="true"></i>Apps that are not preinstalled are usually available through distribution.</li>
+							</div>
+							<div class="align-items-center">
+								<li><i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>Usage of mobile apps has become increasingly prevalent across mobile phone users.</li>
+							</div>
+							<div class="align-items-center">
+								<li><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>Developing apps for mobile devices requires considering the constraints.</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="news" class="news">
+			<div class="container">
+				<h2>Lastest News</h2>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="news_card">
+							<p class="date">Oct, 25, 2013</p>
+							<h4><a href="#">GitHub added some new features to make code review faster than ever</a></h4>
+							<p class="text">Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut</p>
+							<hr>
+							<a class="read_more" href="#">read more</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="news_card">
+							<p class="date">Oct, 25, 2013</p>
+							<h4><a href="#">GitHub added some new features to make code review faster than ever</a></h4>
+							<p class="text">Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut</p>
+							<hr>
+							<a class="read_more" href="#">read more</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="news_card">
+							<p class="date">Oct, 25, 2013</p>
+							<h4><a href="#">GitHub added some new features to make code review faster than ever</a></h4>
+							<p class="text">Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut</p>
+							<hr>
+							<a class="read_more" href="#">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="clients" class="clients">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-8">
+						<h2>Our Client Say</h2>
+
+
+						<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						  </ol>
+						  <div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+							  <p class="text">Developing apps for mobile devices requires considering the constraints and features of these devices. Mobile devices run on battery and have less powerful processors than personal computers and also have more features such as location detection and cameras. Developers also have to consider a wide array of screen sizes.</p>
+							</div>
+							<div class="carousel-item">
+							  <p class="text">Developing apps for mobile devices requires considering the constraints and features of these devices. Mobile devices run on battery and have less powerful processors than personal computers and also have more features such as location detection and cameras. Developers also have to consider a wide array of screen sizes.</p>
+							</div>
+							<div class="carousel-item">
+							  <p class="text">Developing apps for mobile devices requires considering the constraints and features of these devices. Mobile devices run on battery and have less powerful processors than personal computers and also have more features such as location detection and cameras. Developers also have to consider a wide array of screen sizes.</p>
+							</div>
+						  </div>
+						</div> -->
+						
+						<div class="cd-testimonials-wrapper cd-container">
+							<ul class="cd-testimonials">
+								<li>
+									<p class="text">Developing apps for mobile devices requires considering the constraints and features of these devices. Mobile devices run on battery and have less powerful processors than personal computers and also have more features such as location detection and cameras. Developers also have to consider a wide array of screen sizes.</p>
+									<div class="cd-author">
+										<img src="img/testimonial.png" alt="Author image">
+										<ul class="cd-author-info">
+											<li>MyName</li>
+											<li>CEO, AmberCreative</li>
+										</ul>
+									</div>
+								</li>
+						 
+								<li>
+									<p class="text">Developing apps for mobile devices requires considering the constraints and features of these devices. Mobile devices run on battery and have less powerful processors than personal computers and also have more features such as location detection and cameras. Developers also have to consider a wide array of screen sizes.</p>
+									<div class="cd-author">
+										<img src="img/testimonial.png" alt="Author image">
+										<ul class="cd-author-info">
+											<li>MyName</li>
+											<li>CEO, AmberCreative</li>
+										</ul>
+									</div>
+								</li>
+						 
+								<li>
+									<p class="text">Developing apps for mobile devices requires considering the constraints and features of these devices. Mobile devices run on battery and have less powerful processors than personal computers and also have more features such as location detection and cameras. Developers also have to consider a wide array of screen sizes.</p>
+									<div class="cd-author">
+										<img src="img/testimonial.png" alt="Author image">
+										<ul class="cd-author-info">
+											<li>MyName</li>
+											<li>CEO, AmberCreative</li>
+										</ul>
+									</div>
+								</li>
+
+							</ul> <!-- cd-testimonials -->
+						</div> <!-- cd-testimonials-wrapper -->
+
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+						<div class="col-lg-6">
+							<div class="client_card">
+								<p id="myTargetElement1" class="value"></p>
+								<h4>download</h4>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="client_card">
+								<p id="myTargetElement2" class="value"></p>
+								<h4>shared</h4>
+							</div>
+						</div>
+						</div>
+						<div class="row">
+						<div class="col-lg-6">
+							<div class="client_card">
+								<p id="myTargetElement3" class="value"></p>
+								<h4>registers</h4>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="client_card">
+								<p id="myTargetElement4" class="value"></p>
+								<h4>timeworks</h4>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contacts" class="contacts">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20304.834635328694!2d30.50870597362517!3d50.49501599788938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x17951423ce8076b9!2z0J_QsNGA0Log0J3QsNGC0LDQu9C60LA!5e0!3m2!1sru!2sua!4v1485546459476" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="contacts_panel">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<i class="fa fa-map-marker fa-4x contact_i" aria-hidden="true"></i>
+							<h4>address</h4>
+							<p>Room 501 5th Floor 169 Nguyen Ngoc Vu Cau Giay - Ha Noi</p>
+						</div>
+						<div class="col-md-4">
+							<i class="fa fa-headphones fa-4x contact_i" aria-hidden="true"></i>
+							<h4>phone number</h4>
+							<p>+38 095 772 84 73</p>
+							<p>+38 095 772 84 73</p>
+						</div>
+						<div class="col-md-4">
+							<i class="fa fa-envelope-open-o fa-4x contact_i" aria-hidden="true"></i>
+							<h4>e-mail</h4>
+							<p>sayhello@company.com</p>
+							<p>info@hotmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="#"><img src="img/logo-footer.png" alt=""></a>
+						<p>We provide you the best service and support comes register to receive service information.</p>
+						<a href="#" class="a_i"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#" class="a_i"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#" class="a_i"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+						<a href="#" class="a_i"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="#" class="a_i"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					</div>
+					<div class="col-md-2 col-6">
+						<h4>COPYRIGHT</h4>
+						<ul>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Privacy & Policy</a></li>
+							<li><a href="#">Sitemap</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-6">
+						<h4>APP INFOMATION</h4>
+						<ul>
+							<li><a href="#">Version Update</a></li>
+							<li><a href="#">Instruction</a></li>
+							<li><a href="#">Managements</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-6">
+						<h4>RESOURCES</h4>
+						<ul>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Copyright</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-6">
+						<h4>DOWNLOAD APP</h4>
+						<ul>
+							<li><a href="#">IOS version</a></li>
+							<li><a href="#">Android version</a></li>
+							<li><a href="#">Desktop version</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<section class="cop_sec">
+			<div class="container">
+				<div class="copyright">
+					<p>Копирайт © 2012 - 2016 <a href="#">Студия 777</a></p>
+				</div>
+			</div>
+		</section>
+
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		
+		<!-- Waypoints script -->
+		<script src="js/noframework.waypoints.min.js"></script>
+
+		<!-- Counting js script -->
+		<script src="js/countUp.js"></script>
+
+		<script src="js/jquery.flexslider-min.js"></script>
+
+		<!-- Nav changing script! -->
+		<script>
+		$(document).ready(function(){
+			// $("nav").css("background-color", "transparent");
+			// $("nav").css("height", "150px");
+			$("nav").css("box-shadow", "none");
+			// $(".fa-bars").css("color", "#fff");
+			// $(".nav-link").css("color", "#fff");
+			// $(".navbar-brand").css("color", "#fff");
+		  $(window).scroll(function() {
+			if ($(document).scrollTop() > 1) {
+			  $("nav").css("background-color", "#fff");
+			  // $("nav").css("height", "80px");
+			  $("nav").css("box-shadow", "0 3px 5px rgba(0,0,0,0.1)");
+			  $(".fa-bars").css("color", "rgb(37, 37, 37)");
+			  $(".nav-link").css("color", "#252525");
+			  $(".navbar-brand").css("color", "#252525");
+			} else {
+			  $("nav").css("background-color", "transparent");
+			  // $("nav").css("height", "150px");
+			  $("nav").css("box-shadow", "none")
+			  $(".fa-bars").css("color", "#fff");
+			  $(".nav-link").css("color", "#fff");
+			  $(".navbar-brand").css("color", "#fff");
+			}
+		  });
+		});
+		</script>
+
+		<!-- Counting effect (with waypoints) -->
+		<script>
+		$(document).ready(function(){
+			var waypoint = new Waypoint({
+			  element: document.getElementById('news'),
+			  handler: function(direction) {
+					var options = {
+					  useEasing : true, 
+					  useGrouping : true, 
+					  separator : ',', 
+					  decimal : '.', 
+					  prefix : '', 
+					  suffix : 'K+' 
+					};
+					var demo = new CountUp("myTargetElement1", 0, 20, 0, 2.5, options);
+					demo.start();
+					var demo = new CountUp("myTargetElement2", 0, 5, 0, 2.5, options);
+					demo.start();
+					var demo = new CountUp("myTargetElement3", 0, 3, 0, 2.5, options);
+					demo.start();
+					var demo = new CountUp("myTargetElement4", 0, 5, 0, 2.5, options);
+					demo.start();
+				  }
+			});
+		});
+		</script>
+
+		<!-- Smooth anchors -->
+		<script>
+		var $root = $('html, body');
+		$('a').click(function() {
+			$root.animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top-48
+			}, 750);
+			return false;
+		});
+		</script>
+
+		<!-- HelloPreload http://hello-site.ru/preloader/ -->
+		<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #3660C4 url(http://hello-site.ru//main/images/preloads/tail-spin.svg) center center no-repeat;background-size:205px;}</style>
+		<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+		<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+		<!-- HelloPreload http://hello-site.ru/preloader/ -->
+
+		<script>
+			$('.cd-testimonials-wrapper').flexslider({
+				//declare the slider items
+				selector: ".cd-testimonials > li",
+				animation: "slide",
+				//do not add navigation for paging control of each slide
+				controlNav: false,
+				slideshow: false,
+				//Allow height of the slider to animate smoothly in horizontal mode
+				smoothHeight: true,
+				start: function(){
+					$('.cd-testimonials').children('li').css({
+						'opacity': 1,
+						'position': 'relative'
+					});
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,470 @@
+// TODO:
+// 1. Замени скрипт на фонт осм на новый!
+// 3. Добавь анимацию.
+// 4. Добавь прелоадер.
+// 5. МОБИЛЬНОЕ МЕНЮ!
+// 6. В клиентах добавить фото на слайды.
+
+	
+body
+	font-family: 'Roboto', sans-serif
+	padding: 0 !important
+h2
+	font-size: 36px
+	font-weight: 300
+	margin-bottom: 60px
+p
+	font-size: 15px
+	font-weight: 300
+	letter-spacing: 0.5px
+section, footer
+	padding: 100px 0
+a
+	text-decoration: none !important
+	&:hover
+		text-decoration: none !important
+	&:focus
+		text-decoration: none !important
+	&:active
+		text-decoration: none !important
+
+.btn_own
+	color: #fff
+	background-color: #00aeef
+	height: 45px
+	width: 180px
+	padding: 15px 30px
+	font-size: 14px
+	font-weight: 700
+	margin-right: 30px
+	text-align: center
+	line-height: 3.9
+	border-radius: 50px
+	letter-spacing: 0.5px
+	text-transform: uppercase
+	user-select: none
+	outline: none
+	transition: 0.15s linear 0s
+	&:hover
+		color: #fff !important
+		background-color: #ff4081
+		text-decoration: none
+.btn_inline_block
+	display: inline-block
+	padding: 0
+	line-height: 42px
+	margin-bottom: 15px
+.btn_active
+	border: 3px solid #ff4081
+	background-color: #ff4081
+	&:hover
+		border: 3px solid #fff
+		background-color: transparent
+.trans
+	border: 3px solid #fff
+	background-color: transparent
+	&:hover
+		border: 3px solid #ff4081
+.btn_own_subm
+	padding: 0
+	line-height: 21px
+	margin: 0
+	outline: none
+	border: none
+.modal
+	padding: 0
+.modal-body
+	text-align: center
+	.form-group
+		text-align: left
+.modal-dialog
+	margin-top: 25vh
+@media screen and (max-width: 375px)
+	.modal-dialog
+		margin-top: 15vh
+
+nav
+	text-transform: uppercase
+	font-size: 14px
+	font-weight: 500
+	justify-content: center
+	transition: 0.3s
+	ul
+		align-items: center
+		li
+			margin: 0 5px
+	a
+		letter-spacing: 0.5px
+		transition: 0.15s linear 0s
+		&:hover
+			color: #ff4081 !important
+	.navbar-toggler
+		border: none
+	i
+		color: #fff
+		transition: 0.3s
+	.btn_own
+		font-size: 12px
+		font-weight: 500
+		padding: 0px 20px
+		width: 200px
+	.nav-link
+		color: #fff
+	.fa-bars
+		color: #fff
+	.navbar-brand
+		color: #fff
+
+@media screen and (max-width: 991px)
+	nav
+		background-color: #fff !important
+		.btn_own
+			float: right
+		.navbar-toggler
+			position: initial
+			float: left
+		.container
+			text-align: center
+		.navbar-brand
+			margin-top: 7px
+		.nav-link
+			color: #252525 !important
+		.fa-bars
+			color: #252525 !important
+		.navbar-brand
+			color: #252525 !important
+@media screen and (max-width: 767px)
+	.navbar-brand
+		float: right
+@media screen and (max-width: 575px)
+	.container
+		margin-left: 0
+		margin-right: 0
+@media screen and (min-width: 992px)
+	nav
+		background-color: transparent
+
+header
+	background-image: url("../img/bg-header.jpg")
+	background-size: cover
+	height: 100vh
+	padding-top: 35vh
+	color: #fff
+	a
+		color: #fff !important
+	h1
+		font-size: 36px
+		font-weight: 100
+		letter-spacing: 1px
+		span
+			text-transform: uppercase
+			font-size: 54px
+			font-weight: 700
+	p
+		font-size: 16px
+		font-weight: 300
+		letter-spacing: 1px
+		margin: 40px 0
+@media screen and (max-width: 575px)
+	header
+		padding-top: 25vh
+		p
+	h1
+		font-size: 25px !important
+		span
+			font-size: 45px !important
+
+section.advantages
+	.adventage_card
+		text-align: center
+		img
+			margin-bottom: 50px
+		h3
+			color: #545454
+			font-size: 18px
+		p
+			color: #7d7d7d
+			font-size: 15px
+			font-weight: 300
+
+section.features
+	color: #fff
+	background-image: url("../img/bg-features.jpg")
+	background-attachment: fixed
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	img
+		margin-bottom: -200px
+	.btn_own
+		padding: 10px 20px
+		border-width: 2px
+		font-size: 15px
+		font-weight: 400
+	p
+		margin-top: 40px
+		margin-bottom: 30px
+	ul
+		padding: 0
+		font-size: 16px
+		font-weight: 300
+		li
+			list-style: none
+			margin-bottom: 8px
+			i
+				margin-right: 15px
+	#carouselExampleSlidesOnly2
+		position: absolute
+		width: 345px
+		height: 461px
+		top: 51px
+		left: 96px
+		.carousel-inner
+			height: 100%
+	@media screen and (max-width: 1199px)
+		#carouselExampleSlidesOnly2
+			position: absolute
+			width: 288px
+			height: 384px
+			top: 42px
+			left: 82px
+			.carousel-inner
+				height: 100%
+
+section.whyus
+	text-align: center
+	.whyus_card
+		letter-spacing: 0.5px
+		text-align: left
+		i
+			color: #00aeef
+			margin-right: 15px
+		h3
+			color: #252525
+			display: inline
+			font-size: 18px
+			font-weight: 400
+		p
+			color: #7d7d7d
+			font-size: 15px
+			font-weight: 300
+			margin-top: 30px
+			margin-bottom: 60px
+		.align-items-center
+			display: flex
+
+section.every_screen
+	background-color: #F3F3F3
+	p
+		color: #7d7d7d
+		font-size: 15px
+		font-weight: 300
+		margin: 15px 0
+@media screen and (max-width: 767px)
+	#whyus_img
+		margin-top: 50px
+
+section.sharing
+	color: #fff
+	background-color: #3a6ee8
+	ul
+		padding: 0
+		list-style: none
+		font-size: 15px
+		font-weight: 300
+		letter-spacing: 0.5px
+		li
+			display: inherit
+			margin: 30px 0
+			i
+				margin-right: 20px
+				margin-top: 5px
+		.align-items-center
+			display: flex
+
+section.news
+	text-align: center
+	.news_card
+		width: 100%
+		padding: 30px
+		margin-bottom: 30px
+		box-shadow: 0px 0px 6px 1px #ccc
+		font-size: 15px
+		font-weight: 300
+		color: #7d7d7d
+		letter-spacing: 0.5px
+		text-align: left
+		transition: 0.3s linear 0s
+		&:hover
+			transform: scale(1.1)
+		a.read_more
+			color: #252525
+			text-decoration: none
+			text-transform: uppercase
+			font-weight: 500
+			&:hover
+				color: #ff4081
+		p.date
+			margin-bottom: 25px
+		h4
+			margin-bottom: 25px
+		h4 > a
+			line-height: 23px
+			font-size: 21px
+			font-weight: 500
+			color: #252525
+			text-decoration: none
+			transition: 0.3s
+			&:hover
+				color: #ff4081
+		p.text
+			margin-bottom: 25px
+
+section.clients
+	color: #fff
+	background-image: url("../img/bg-testimonial.jpg")
+	background-attachment: fixed
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	p.text
+		font-size: 15px
+		font-weight: 300
+		letter-spacing: 0.5px
+		padding-bottom: 30px
+		font-style: normal
+		// border-bottom: 1px dashed #b3c7f4
+
+	.cd-testimonials-wrapper
+		margin: 0
+		background-color: transparent
+		&::after
+			display: none
+	.cd-author-info
+		list-style-type: none
+		li
+			color: #fff !important
+	.cd-testimonials > li
+		left: -37px
+	.flex-next
+		color: #fff
+
+	.client_card
+		padding: 15px
+		margin: 15px 0
+		border: 1px dashed #b3c7f4
+		text-align: center
+		p
+			border: none
+			padding: 0
+		p.value
+			font-size: 36px
+			font-weight: 500
+		h4
+			font-size: 16px
+			font-weight: 300
+			text-transform: uppercase
+
+
+section.contacts
+	padding: 0
+	padding-bottom: 30px
+	.contacts_panel
+		text-align: center
+		i.contact_i
+			color: #fff
+			width: 120px
+			height: 120px
+			background-color: #ff4081
+			border-radius: 50%
+			padding-top: 28px
+			margin-top: -75px
+			margin-bottom: 50px
+		h4
+			font-size: 15px
+			font-weight: 600
+			text-transform: uppercase
+			letter-spacing: 0.5px
+			margin-bottom: 30px
+		p
+			color: #7d7d7d
+			margin-bottom: 0
+@media screen and (max-width: 767px)
+	i.contact_i
+		margin-top: 50px !important
+
+footer
+	color: #7d7d7d
+	background-color: #1E232B
+	font-size: 15px
+	font-weight: 300
+	letter-spacing: 0.5px
+	.a_i
+		display: inline-block
+		color: #fff
+		width: 35px
+		height: 35px
+		background-color: #353941
+		border-radius: 50%
+		text-align: center
+		line-height: 35px
+		margin-right: 15px
+		margin-bottom: 15px
+		transition: 0.3s
+		&:hover
+			background-color: #ff4081
+	p
+		margin-top: 45px
+		margin-bottom: 30px
+	h4
+		font-size: 14px
+		font-weight: 500
+		padding-bottom: 20px
+		margin-bottom: 20px
+		&::before
+			content: ""
+			position: absolute
+			background-color: #4b4f55
+			height: 1px
+			width: 30px
+			top: 38px
+			left: 15px
+		&::after
+			content: ""
+			position: absolute
+			background-color: #4b4f55
+			height: 1px
+			width: 45px
+			top: 30px
+			left: 15px
+	ul
+		padding: 0
+		li
+			margin: 10px 0
+			list-style: none
+			a
+				color: #7d7d7d
+				transition: 0.3s
+				&:hover
+					color: #ff4081
+					margin-left: 15px
+					text-decoration: none
+section.cop_sec
+	color: #7d7d7d
+	background-color: #1E232B
+	font-size: 15px
+	font-weight: 300
+	letter-spacing: 0.5px
+	padding: 0
+	text-align: center
+	.copyright
+		padding: 35px 0
+		border-top: 1px solid #4E4E4E
+		p
+			margin: 0
+			a
+				color: #7d7d7d
+				transition: 0.3s
+				&:hover
+					color: #ff4081
+					text-decoration: none
